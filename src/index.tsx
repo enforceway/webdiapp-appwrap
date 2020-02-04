@@ -2,12 +2,13 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
+ * Generated with the TypeScript template
+ * https://github.com/react-native-community/react-native-template-typescript
+ *
  * @format
- * @flow
  */
 
 import React from 'react';
-import Hello from './src/components/hello';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,12 +26,27 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+declare var global: {HermesInternal: null | {}};
+
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <Text>text confirm area</Text>
-      <Hello />
+      <SafeAreaView>
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          style={styles.scrollView}>
+          <Header />
+          <View style={styles.body}>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionDescription}>
+                hi, <Text style={styles.highlight}>enforceway</Text>, welcome to React
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     </>
   );
 };
