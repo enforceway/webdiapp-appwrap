@@ -1,4 +1,3 @@
 https://reactnative.cn/docs/signed-apk-android/
 
-#打包后apk的位置#
-##android\app\build\outputs\apk\release
+#adb install E:\enforceway\react\appwrap\android\app\build\outputs\apk\release\app-release.apk
